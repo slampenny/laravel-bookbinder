@@ -1,0 +1,31 @@
+{
+    "name": "jlapp/bookbinder",
+    "description": "Laravel Bookbinder allows you to convert from ePub to PDF to Mobi",
+    "keywords": ["laravel", "bookbinder", "publisher", "epub", "mobi", "PDF", "kindle"],
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jlapp",
+            "email": "jordan@jordanlapp.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-tidy": "*",
+        "lib-xsl": "1.1.16",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/library",
+            "src/model",
+            "src/controllers"
+        ],
+        "psr-0": {
+            "Jlapp\\Bookbinder\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
